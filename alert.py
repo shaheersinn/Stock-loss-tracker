@@ -47,7 +47,7 @@ def send_telegram(message: str):
     }
     r = requests.post(url, json=payload, timeout=10)
     r.raise_for_status()
-    print(f"  ✅ Telegram alert sent.")
+    print("  ✅ Telegram alert sent.")
 
 
 def get_price(ticker: str) -> float | None:
