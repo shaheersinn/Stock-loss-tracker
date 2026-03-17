@@ -2,7 +2,7 @@ import os
 import json
 import requests
 import yfinance as yf
-from datetime import datetime
+from datetime import datetime, timezone
 
 # ── Target price levels ────────────────────────────────────────────────────────
 # Each entry: {"up": <price>, "down": <price>}
@@ -100,7 +100,7 @@ def check_level(ticker, price, target, direction, state, now):
 def main():
     state = load_state()
     state_changed = False
-    now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     print(f"\n{'='*55}")
     print(f"Stock Alert Check — {now}")
