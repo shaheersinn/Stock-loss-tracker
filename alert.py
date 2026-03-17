@@ -15,7 +15,7 @@ TARGETS = {
     "POET": {"up": 10.00,  "down": 3.00},
     "ONDS": {"up": 16.00,  "down": 6.00},
     "NVDA": {"up": 211.00, "down": 170.00},
-    "MU":   {"up": 480.00, "down": 360.00},
+    "MU":   {"up": 480.00, "down": 415.00},
 }
 
 # ── Telegram config (set as GitHub Secrets) ────────────────────────────────────
