@@ -9,12 +9,12 @@ from datetime import datetime
 # Alert fires when price >= up  OR  price <= down
 TARGETS = {
     "INTC": {"up": 54.00,  "down": 40.00},
-    "AMD":  {"up": 260.00, "down": 180.00},
+    "AMD":  {"up": 260.00, "down": 199.00},
     "RKLB": {"up": 90.00,  "down": 50.00},
-    "APLD": {"up": 40.00,  "down": 20.00},
-    "POET": {"up": 10.00,  "down": 3.00},
-    "ONDS": {"up": 16.00,  "down": 6.00},
-    "NVDA": {"up": 211.00, "down": 170.00},
+    "APLD": {"up": 40.00,  "down": 24.00},
+    "POET": {"up": 10.00,  "down": 5.00},
+    "ONDS": {"up": 16.00,  "down": 8.00},
+    "NVDA": {"up": 211.00, "down": 178.00},
     "MU":   {"up": 480.00, "down": 415.00},
 }
 
