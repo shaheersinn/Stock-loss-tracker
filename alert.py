@@ -97,6 +97,8 @@ def check_level(ticker, price, target, direction, state, now):
         if send_telegram(msg):
             state[alert_key] = {"fired_at": now, "price_at_fire": price}
             return True
+        print(f"  ⚠️ Alert condition hit for {ticker} but delivery failed; will retry next run.")
+        return False
 
     elif not hit and state.get(alert_key):
         # Price moved back through the level — reset so it can fire again later
