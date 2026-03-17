@@ -19,8 +19,8 @@ TARGETS = {
 }
 
 # ── Telegram config (set as GitHub Secrets) ────────────────────────────────────
-TELEGRAM_TOKEN = os.environ["TELEGRAM_TOKEN"]
-TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "").strip()
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "").strip()
 
 # ── Alert state file (committed to repo to persist across runs) ────────────────
 STATE_FILE = "alert_state.json"
@@ -38,16 +38,26 @@ def save_state(state: dict):
         json.dump(state, f, indent=2)
 
 
-def send_telegram(message: str):
+def send_telegram(message: str) -> bool:
+    if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
+        print("  ⚠️ Telegram credentials are missing. Skipping alert send.")
+        return False
+
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     payload = {
         "chat_id": TELEGRAM_CHAT_ID,
         "text": message,
         "parse_mode": "Markdown",
     }
-    r = requests.post(url, json=payload, timeout=10)
-    r.raise_for_status()
+    try:
+        r = requests.post(url, json=payload, timeout=10)
+        r.raise_for_status()
+    except requests.RequestException as e:
+        print(f"  ⚠️ Telegram alert failed: {e}")
+        return False
+
     print("  ✅ Telegram alert sent.")
+    return True
 
 
 def get_price(ticker: str) -> float | None:
@@ -84,9 +94,11 @@ def check_level(ticker, price, target, direction, state, now):
             f"🎯 Target price:  `${target:,.2f}`\n\n"
             f"⏰ {now}"
         )
-        send_telegram(msg)
-        state[alert_key] = {"fired_at": now, "price_at_fire": price}
-        return True
+        if send_telegram(msg):
+            state[alert_key] = {"fired_at": now, "price_at_fire": price}
+            return True
+        print(f"  ⚠️ Alert condition hit for {ticker} but delivery failed; will retry next run.")
+        return False
 
     elif not hit and state.get(alert_key):
         # Price moved back through the level — reset so it can fire again later
