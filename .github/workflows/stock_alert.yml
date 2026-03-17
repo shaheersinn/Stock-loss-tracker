@@ -2,13 +2,12 @@ name: Stock Price Alert
 
 on:
   schedule:
-    # Runs every 15 minutes during US market hours (Mon–Fri, 13:30–21:00 UTC = 9:30am–5pm ET)
-    - cron: "*/15 13-20 * * 1-5"   # every 15 min, 1:00–8:45pm UTC weekdays
-    - cron: "0 21 * * 1-5"         # catch the 4pm ET close candle
-  workflow_dispatch:                 # allow manual runs any time
+    - cron: "*/15 13-20 * * 1-5"
+    - cron: "0 21 * * 1-5"
+  workflow_dispatch:
 
 permissions:
-  contents: write   # needed to commit alert_state.json back to the repo
+  contents: write
 
 jobs:
   check-stocks:
@@ -30,8 +29,8 @@ jobs:
 
       - name: Run stock alert check
         env:
-          TELEGRAM_TOKEN: ${{ 8592580519:AAECf_seT98zqVaspfEtQEqmv-3_pijeUEA }}
-          TELEGRAM_CHAT_ID: ${{ 8088654393 }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python alert.py
 
       - name: Commit updated alert state (if changed)
