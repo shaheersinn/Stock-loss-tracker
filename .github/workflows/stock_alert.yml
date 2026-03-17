@@ -30,8 +30,8 @@ jobs:
 
       - name: Run stock alert check
         env:
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TOKEN: ${{ 8592580519:AAECf_seT98zqVaspfEtQEqmv-3_pijeUEA }}
+          TELEGRAM_CHAT_ID: ${{ 8088654393 }}
         run: python alert.py
 
       - name: Commit updated alert state (if changed)
