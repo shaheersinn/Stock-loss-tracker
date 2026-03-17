@@ -8,12 +8,12 @@ from datetime import datetime, timezone
 TARGETS = {
     "INTC": {"up": 54.00,  "down": 42.00},
     "AMD":  {"up": 260.00, "down": 199.00},
-    "RKLB": {"up": 90.00,  "down": 50.00},
+    "RKLB": {"up": 90.00,  "down": 65.00},
     "APLD": {"up": 40.00,  "down": 24.00},
     "POET": {"up": 10.00,  "down": 5.00},
     "ONDS": {"up": 16.00,  "down": 8.00},
     "NVDA": {"up": 211.00, "down": 178.00},
-    "MU":   {"up": 480.00, "down": 415.00},
+    "MU":   {"up": 480.00, "down": 425.00},
 }
 
 # ── Telegram config ────────────────────────────────────────────────────────────
