@@ -5,8 +5,6 @@ import yfinance as yf
 from datetime import datetime, timezone
 
 # ── Target price levels ────────────────────────────────────────────────────────
-# Each entry: {"up": <price>, "down": <price>}
-# Alert fires when price >= up  OR  price <= down
 TARGETS = {
     "INTC": {"up": 54.00,  "down": 42.00},
     "AMD":  {"up": 260.00, "down": 199.00},
@@ -18,11 +16,20 @@ TARGETS = {
     "MU":   {"up": 480.00, "down": 415.00},
 }
 
-# ── Telegram config (set as GitHub Secrets) ────────────────────────────────────
-TELEGRAM_TOKEN = os.environ["TELEGRAM_TOKEN"]
-TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
+# ── Telegram config ────────────────────────────────────────────────────────────
+# Accepts either TELEGRAM_TOKEN or TELEGRAM_BOT_TOKEN as the secret name
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN") or os.environ.get("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
-# ── Alert state file (committed to repo to persist across runs) ────────────────
+if not TELEGRAM_TOKEN:
+    raise RuntimeError(
+        "Neither TELEGRAM_TOKEN nor TELEGRAM_BOT_TOKEN secret is set. "
+        "Go to repo Settings > Secrets > Actions and add one."
+    )
+if not TELEGRAM_CHAT_ID:
+    raise RuntimeError("TELEGRAM_CHAT_ID secret is not set.")
+
+# ── Alert state file ───────────────────────────────────────────────────────────
 STATE_FILE = "alert_state.json"
 
 
@@ -61,8 +68,6 @@ def get_price(ticker: str) -> float | None:
 
 
 def check_level(ticker, price, target, direction, state, now):
-    """Check one price level and fire a Telegram alert if needed.
-    Returns True if state was changed."""
     alert_key = f"{ticker}_{direction}_{target}"
 
     if direction == "up":
@@ -89,7 +94,6 @@ def check_level(ticker, price, target, direction, state, now):
         return True
 
     elif not hit and state.get(alert_key):
-        # Price moved back through the level — reset so it can fire again later
         print(f"    {direction.upper()} alert for {ticker} @ ${target} reset (price moved away).")
         del state[alert_key]
         return True
