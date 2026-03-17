@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 # Each entry: {"up": <price>, "down": <price>}
 # Alert fires when price >= up  OR  price <= down
 TARGETS = {
-    "INTC": {"up": 54.00,  "down": 40.00},
+    "INTC": {"up": 54.00,  "down": 42.00},
     "AMD":  {"up": 260.00, "down": 199.00},
     "RKLB": {"up": 90.00,  "down": 50.00},
     "APLD": {"up": 40.00,  "down": 24.00},
