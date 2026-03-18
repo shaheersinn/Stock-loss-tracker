@@ -7,7 +7,10 @@ from datetime import datetime, timezone
 # ── Target price levels ────────────────────────────────────────────────────────
 TARGETS = {
     "INTC": {"up": 54.00,  "down": 42.00},
-    "AMD":  {"up": 260.00, "down": 199.00},
+    "AMD": {
+    "up": [220.00, 240.00, 260.00],
+    "down": [199.00],
+},
     "RKLB": {"up": 90.00,  "down": 65.00},
     "APLD": {"up": 40.00,  "down": 24.00},
     "POET": {"up": 10.00,  "down": 5.00},
