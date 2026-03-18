@@ -5,18 +5,18 @@ import yfinance as yf
 from datetime import datetime, timezone
 
 # ── Target price levels ────────────────────────────────────────────────────────
+# Each direction can be either:
+#   - a single number (backward compatible), or
+#   - a list of numbers for multiple alert levels.
 TARGETS = {
-    "INTC": {"up": 54.00,  "down": 42.00},
-    "AMD": {
-    "up": [220.00, 240.00, 260.00],
-    "down": [199.00],
-},
-    "RKLB": {"up": 90.00,  "down": 65.00},
-    "APLD": {"up": 40.00,  "down": 24.00},
-    "POET": {"up": 10.00,  "down": 5.00},
-    "ONDS": {"up": 16.00,  "down": 8.00},
+    "INTC": {"up": 54.00, "down": 42.00},
+    "AMD": {"up": [220.00, 240.00, 260.00], "down": [199.00, 180.00, 160.00]},
+    "RKLB": {"up": 90.00, "down": 65.00},
+    "APLD": {"up": 40.00, "down": 24.00},
+    "POET": {"up": 10.00, "down": 5.00},
+    "ONDS": {"up": 16.00, "down": 8.00},
     "NVDA": {"up": 211.00, "down": 178.00},
-    "MU":   {"up": 480.00, "down": 425.00},
+    "MU": {"up": 480.00, "down": 425.00},
 }
 
 # ── Telegram config ────────────────────────────────────────────────────────────
@@ -70,6 +70,12 @@ def get_price(ticker: str) -> float | None:
         return None
 
 
+def normalize_levels(levels) -> list[float]:
+    if isinstance(levels, (list, tuple)):
+        return sorted({round(float(x), 4) for x in levels})
+    return [round(float(levels), 4)]
+
+
 def check_level(ticker, price, target, direction, state, now):
     alert_key = f"{ticker}_{direction}_{target}"
 
@@ -96,7 +102,7 @@ def check_level(ticker, price, target, direction, state, now):
         state[alert_key] = {"fired_at": now, "price_at_fire": price}
         return True
 
-    elif not hit and state.get(alert_key):
+    if not hit and state.get(alert_key):
         print(f"    {direction.upper()} alert for {ticker} @ ${target} reset (price moved away).")
         del state[alert_key]
         return True
@@ -109,20 +115,29 @@ def main():
     state_changed = False
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
-    print(f"\n{'='*55}")
+    print(f"\n{'=' * 55}")
     print(f"Stock Alert Check — {now}")
-    print(f"{'='*55}")
+    print(f"{'=' * 55}")
 
     for ticker, levels in TARGETS.items():
         price = get_price(ticker)
         if price is None:
             continue
 
-        print(f"\n  {ticker:6s}  price=${price:>10.4f}  "
-              f"[down≤${levels['down']:.2f} | up≥${levels['up']:.2f}]")
+        up_levels = normalize_levels(levels["up"])
+        down_levels = normalize_levels(levels["down"])
+        up_label = ", ".join(f"${x:.2f}" for x in up_levels)
+        down_label = ", ".join(f"${x:.2f}" for x in down_levels)
 
-        for direction, target in [("up", levels["up"]), ("down", levels["down"])]:
-            changed = check_level(ticker, price, target, direction, state, now)
+        print(f"\n  {ticker:6s}  price=${price:>10.4f}  [down≤ {down_label} | up≥ {up_label}]")
+
+        for target in up_levels:
+            changed = check_level(ticker, price, target, "up", state, now)
+            if changed:
+                state_changed = True
+
+        for target in down_levels:
+            changed = check_level(ticker, price, target, "down", state, now)
             if changed:
                 state_changed = True
 

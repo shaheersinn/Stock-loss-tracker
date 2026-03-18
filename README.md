@@ -9,14 +9,14 @@ Runs automatically every **15 minutes** during US market hours via GitHub Action
 
 | Ticker | 📉 Downside Alert | 🚀 Upside Alert |
 |--------|------------------|----------------|
-| INTC   | ≤ $40.00         | ≥ $54.00       |
-| AMD    | ≤ $180.00        | ≥ $260.00      |
-| RKLB   | ≤ $50.00         | ≥ $90.00       |
-| APLD   | ≤ $20.00         | ≥ $40.00       |
-| POET   | ≤ $3.00          | ≥ $11.00       |
-| ONDS   | ≤ $6.00          | ≥ $16.00       |
-| NVDA   | ≤ $170.00        | ≥ $211.00      |
-| MU     | ≤ $360.00        | ≥ $480.00      |
+| INTC   | ≤ $42.00         | ≥ $54.00       |
+| AMD    | ≤ $199.00, $180.00, $160.00 | ≥ $220.00, $240.00, $260.00 |
+| RKLB   | ≤ $65.00         | ≥ $90.00       |
+| APLD   | ≤ $24.00         | ≥ $40.00       |
+| POET   | ≤ $5.00          | ≥ $10.00       |
+| ONDS   | ≤ $8.00          | ≥ $16.00       |
+| NVDA   | ≤ $178.00        | ≥ $211.00      |
+| MU     | ≤ $425.00        | ≥ $480.00      |
 
 ---
 
@@ -64,9 +64,10 @@ That's it! ✅ The workflow will now run automatically.
 
 - GitHub Actions runs the script every **15 minutes**, Monday–Friday, during US market hours (9:30 AM – 5:00 PM ET).
 - `yfinance` fetches the latest price for each ticker.
-- If a stock's price **≥ its target**, a Telegram message is sent.
-- The alert state is saved in `alert_state.json` (committed back to the repo), so you **won't receive duplicate alerts** while the stock stays above target.
-- If the price **drops back below** the target, the alert resets — so you'll get notified again if it bounces back up.
+- Each ticker can watch **one target or multiple target levels** in each direction.
+- If a stock's price crosses a watched threshold, a Telegram message is sent.
+- The alert state is saved in `alert_state.json` (committed back to the repo), so you **won't receive duplicate alerts** while the stock stays beyond that same threshold.
+- If the price moves back away from a level, that level resets — so you'll get notified again if it crosses it later.
 
 ---
 
@@ -76,8 +77,11 @@ Edit `alert.py` and modify the `TARGETS` dict:
 
 ```python
 TARGETS = {
-    "INTC":  54.00,
-    "AMD":  260.00,
+    "INTC": {"up": 54.00, "down": 42.00},
+    "AMD": {
+        "up": [220.00, 240.00, 260.00],
+        "down": [199.00, 180.00, 160.00],
+    },
     # add / change / remove as needed
 }
 ```
