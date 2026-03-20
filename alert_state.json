@@ -6,5 +6,9 @@
   "MU_down_440.0": {
     "fired_at": "2026-03-20 13:55 UTC",
     "price_at_fire": 437.15
+  },
+  "MU_down_430.0": {
+    "fired_at": "2026-03-20 22:23 UTC",
+    "price_at_fire": 422.9
   }
 }
