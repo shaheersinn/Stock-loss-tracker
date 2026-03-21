@@ -9,11 +9,11 @@ from datetime import datetime, timezone
 #   - a single number (backward compatible), or
 #   - a list of numbers for multiple alert levels.
 TARGETS = {
-    "INTC": {"up": 54.00, "down": 42.00},
+    "INTC": {"up": 54.00, "down": 43.00},
     "AMD": {"up": [220.00, 240.00, 260.00], "down": [199.00, 180.00, 160.00]},
-    "RKLB": {"up": 90.00, "down": 65.00},
+    "RKLB": {"up": 90.00, "down": 69.00},
     "APLD": {"up": 40.00, "down": 24.00},
-    "POET": {"up": 10.00, "down": 5.00},
+    "POET": {"up": 10.00, "down": 6.5.00},
     "ONDS": {"up": 16.00, "down": 8.00},
     "NVDA": {"up": 211.00, "down": 178.00},
     "MU": {"up": 480.00, "down": [420.00, 430.00,440.00]},
