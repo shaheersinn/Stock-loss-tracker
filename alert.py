@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 #   - a single number (backward compatible), or
 #   - a list of numbers for multiple alert levels.
 TARGETS = {
-    "INTC": {"up": [50.00,54.00]},, "down": 43.00},
+    "INTC": {"up": [50.00,54.00], "down": 43.00},
     "AMD": {"up": [220.00, 240.00, 260.00], "down": [199.00, 180.00, 160.00]},
     "RKLB": {"up": 90.00, "down": 69.00},
     "APLD": {"up": 40.00, "down": 26.00},
