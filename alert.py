@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 TARGETS = {
     "INTC": {"up": [50.00,54.00], "down": 43.00},
     "AMD": {"up": [220.00, 240.00, 260.00], "down": [199.00, 180.00, 160.00]},
-    "RKLB": {"up": 90.00, "down": 67.00},
+    "RKLB": {"up": [90.00,75.00,85.00], "down": 67.00},
     "APLD": {"up": 40.00, "down": 25.00},
     "POET": {"up": 10.00, "down":  6.00},
     "ONDS": {"up": 16.00, "down": 8.00},
