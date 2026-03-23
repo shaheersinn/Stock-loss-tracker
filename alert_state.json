@@ -22,5 +22,9 @@
   "MU_down_420.0": {
     "fired_at": "2026-03-23 15:14 UTC",
     "price_at_fire": 418.58
+  },
+  "NVDA_down_178.0": {
+    "fired_at": "2026-03-23 16:10 UTC",
+    "price_at_fire": 175.46
   }
 }
