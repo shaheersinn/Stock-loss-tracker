@@ -1,8 +1,4 @@
 {
-  "NVDA_down_178.0": {
-    "fired_at": "2026-03-20 13:55 UTC",
-    "price_at_fire": 176.57
-  },
   "MU_down_440.0": {
     "fired_at": "2026-03-20 13:55 UTC",
     "price_at_fire": 437.15
@@ -22,5 +18,9 @@
   "POET_down_7.0": {
     "fired_at": "2026-03-22 00:43 UTC",
     "price_at_fire": 5.93
+  },
+  "MU_down_420.0": {
+    "fired_at": "2026-03-23 15:14 UTC",
+    "price_at_fire": 418.58
   }
 }
