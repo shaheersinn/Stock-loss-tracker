@@ -22,5 +22,9 @@
   "MU_down_420.0": {
     "fired_at": "2026-03-23 15:14 UTC",
     "price_at_fire": 418.58
+  },
+  "POET_down_6.0": {
+    "fired_at": "2026-03-25 17:43 UTC",
+    "price_at_fire": 5.99
   }
 }
