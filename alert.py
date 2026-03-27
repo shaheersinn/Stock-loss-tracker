@@ -9,14 +9,14 @@ from datetime import datetime, timezone
 #   - a single number (backward compatible), or
 #   - a list of numbers for multiple alert levels.
 TARGETS = {
-    "INTC": {"up": [50.00,54.00], "down": 43.00},
+    "INTC": {"up": [48.00, 50.00,54.00], "down": 43.00},
     "AMD": {"up": [220.00, 240.00, 260.00], "down": [199.00, 180.00, 160.00]},
     "RKLB": {"up": [90.00,75.00,85.00], "down": 67.00},
-    "APLD": {"up": 40.00, "down": 25.00},
-    "POET": {"up": 10.00, "down":  6.00},
-    "ONDS": {"up": 16.00, "down": 8.00},
+    "APLD": {"up": [40.00, 30.00, 29.00], "down": 25.00},
+    "POET": {"up": [10.00,8.00], "down":  6.00},
+    "ONDS": {"up": 15.00, "down": 8.00},
     "NVDA": {"up": [190.00, 196.00,205.00], "down": 178.00},
-    "MU": {"up": 480.00, "down": [420.00, 430.00,440.00]},
+    "MU": {"up": 480.00, "down": [410.00, 420.00, 430.00,440.00]},
 }
 
 # ── Telegram config ────────────────────────────────────────────────────────────
