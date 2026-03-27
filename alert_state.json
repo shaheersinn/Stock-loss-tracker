@@ -42,5 +42,9 @@
   "MU_down_410.0": {
     "fired_at": "2026-03-27 18:49 UTC",
     "price_at_fire": 357.61
+  },
+  "INTC_down_43.0": {
+    "fired_at": "2026-03-27 19:10 UTC",
+    "price_at_fire": 42.97
   }
 }
