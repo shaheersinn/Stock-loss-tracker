@@ -50,5 +50,9 @@
   "AMD_down_199.0": {
     "fired_at": "2026-03-30 16:47 UTC",
     "price_at_fire": 197.69
+  },
+  "ONDS_down_8.0": {
+    "fired_at": "2026-03-30 18:40 UTC",
+    "price_at_fire": 7.895
   }
 }
