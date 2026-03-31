@@ -46,9 +46,5 @@
   "INTC_down_43.0": {
     "fired_at": "2026-03-30 14:23 UTC",
     "price_at_fire": 42.42
-  },
-  "AMD_down_199.0": {
-    "fired_at": "2026-03-30 16:47 UTC",
-    "price_at_fire": 197.69
   }
 }
