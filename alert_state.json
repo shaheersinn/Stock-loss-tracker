@@ -42,5 +42,9 @@
   "APLD_down_25.0": {
     "fired_at": "2026-04-01 18:37 UTC",
     "price_at_fire": 24.2701
+  },
+  "INTC_up_48.0": {
+    "fired_at": "2026-04-01 20:26 UTC",
+    "price_at_fire": 48.03
   }
 }
