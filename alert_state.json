@@ -38,5 +38,9 @@
   "INTC_up_48.0": {
     "fired_at": "2026-04-01 15:50 UTC",
     "price_at_fire": 48.35
+  },
+  "RKLB_down_67.0": {
+    "fired_at": "2026-04-01 17:37 UTC",
+    "price_at_fire": 66.59
   }
 }
