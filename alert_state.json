@@ -42,5 +42,9 @@
   "AMD_up_220.0": {
     "fired_at": "2026-04-06 14:06 UTC",
     "price_at_fire": 221.185
+  },
+  "CRWV_up_80.0": {
+    "fired_at": "2026-04-06 15:05 UTC",
+    "price_at_fire": 81.8
   }
 }
