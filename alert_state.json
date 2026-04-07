@@ -23,10 +23,6 @@
     "fired_at": "2026-03-23 15:14 UTC",
     "price_at_fire": 418.58
   },
-  "NVDA_down_178.0": {
-    "fired_at": "2026-03-26 14:21 UTC",
-    "price_at_fire": 175.205
-  },
   "MU_down_410.0": {
     "fired_at": "2026-03-27 18:49 UTC",
     "price_at_fire": 357.61
@@ -51,12 +47,12 @@
     "fired_at": "2026-04-07 14:27 UTC",
     "price_at_fire": 5.765
   },
-  "APLD_down_25.0": {
-    "fired_at": "2026-04-07 18:51 UTC",
-    "price_at_fire": 24.91
-  },
   "AMD_up_220.0": {
     "fired_at": "2026-04-07 19:52 UTC",
     "price_at_fire": 221.0
+  },
+  "CRWV_up_85.0": {
+    "fired_at": "2026-04-07 20:38 UTC",
+    "price_at_fire": 85.24
   }
 }
