@@ -54,5 +54,9 @@
   "APLD_down_25.0": {
     "fired_at": "2026-04-07 18:51 UTC",
     "price_at_fire": 24.91
+  },
+  "AMD_up_220.0": {
+    "fired_at": "2026-04-07 19:52 UTC",
+    "price_at_fire": 221.0
   }
 }
