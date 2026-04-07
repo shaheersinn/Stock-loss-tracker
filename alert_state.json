@@ -50,5 +50,9 @@
   "POET_down_6.0": {
     "fired_at": "2026-04-07 14:27 UTC",
     "price_at_fire": 5.765
+  },
+  "APLD_down_25.0": {
+    "fired_at": "2026-04-07 18:51 UTC",
+    "price_at_fire": 24.91
   }
 }
