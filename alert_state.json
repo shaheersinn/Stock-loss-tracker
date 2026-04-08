@@ -39,14 +39,6 @@
     "fired_at": "2026-04-06 15:05 UTC",
     "price_at_fire": 81.8
   },
-  "RKLB_down_67.0": {
-    "fired_at": "2026-04-07 14:27 UTC",
-    "price_at_fire": 65.21
-  },
-  "POET_down_6.0": {
-    "fired_at": "2026-04-07 14:27 UTC",
-    "price_at_fire": 5.765
-  },
   "AMD_up_220.0": {
     "fired_at": "2026-04-07 19:52 UTC",
     "price_at_fire": 221.0
@@ -54,5 +46,9 @@
   "CRWV_up_85.0": {
     "fired_at": "2026-04-07 20:38 UTC",
     "price_at_fire": 85.24
+  },
+  "INTC_up_54.0": {
+    "fired_at": "2026-04-08 14:29 UTC",
+    "price_at_fire": 57.31
   }
 }
