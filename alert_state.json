@@ -50,5 +50,9 @@
   "CRWV_up_95.0": {
     "fired_at": "2026-04-10 14:12 UTC",
     "price_at_fire": 97.58
+  },
+  "MU_down_420.0": {
+    "fired_at": "2026-04-10 16:06 UTC",
+    "price_at_fire": 415.2
   }
 }
