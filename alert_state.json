@@ -43,8 +43,16 @@
     "fired_at": "2026-04-08 14:29 UTC",
     "price_at_fire": 57.31
   },
-  "RKLB_down_67.0": {
-    "fired_at": "2026-04-09 18:37 UTC",
-    "price_at_fire": 66.94
+  "AMD_up_240.0": {
+    "fired_at": "2026-04-10 14:12 UTC",
+    "price_at_fire": 245.6289
+  },
+  "CRWV_up_95.0": {
+    "fired_at": "2026-04-10 14:12 UTC",
+    "price_at_fire": 97.58
+  },
+  "MU_down_420.0": {
+    "fired_at": "2026-04-10 14:12 UTC",
+    "price_at_fire": 418.68
   }
 }
