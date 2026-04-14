@@ -1,8 +1,4 @@
 {
-  "MU_down_440.0": {
-    "fired_at": "2026-03-20 13:55 UTC",
-    "price_at_fire": 437.15
-  },
   "RKLB_down_69.0": {
     "fired_at": "2026-03-22 00:43 UTC",
     "price_at_fire": 67.23
@@ -46,10 +42,6 @@
   "CRWV_up_95.0": {
     "fired_at": "2026-04-10 14:12 UTC",
     "price_at_fire": 97.58
-  },
-  "POET_up_7.0": {
-    "fired_at": "2026-04-10 19:10 UTC",
-    "price_at_fire": 7.075
   },
   "APLD_up_29.0": {
     "fired_at": "2026-04-14 14:46 UTC",
