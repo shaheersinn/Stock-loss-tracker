@@ -54,5 +54,9 @@
   "NVDA_up_196.0": {
     "fired_at": "2026-04-15 19:25 UTC",
     "price_at_fire": 198.035
+  },
+  "APLD_up_30.0": {
+    "fired_at": "2026-04-15 20:12 UTC",
+    "price_at_fire": 30.81
   }
 }
