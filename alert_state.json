@@ -70,5 +70,9 @@
   "APLD_up_30.0": {
     "fired_at": "2026-04-16 20:06 UTC",
     "price_at_fire": 30.09
+  },
+  "RKLB_up_85.0": {
+    "fired_at": "2026-04-17 14:17 UTC",
+    "price_at_fire": 85.2299
   }
 }
