@@ -82,5 +82,9 @@
   "POET_up_10.0": {
     "fired_at": "2026-04-21 14:30 UTC",
     "price_at_fire": 10.295
+  },
+  "MU_up_480.0": {
+    "fired_at": "2026-04-23 20:36 UTC",
+    "price_at_fire": 481.72
   }
 }
