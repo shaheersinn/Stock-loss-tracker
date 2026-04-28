@@ -2,7 +2,7 @@ name: Stock Price Alert
 
 on:
   schedule:
-    - cron: "*/15 13-20 * * 1-5"
+    - cron: "*/5 13-20 * * 1-5"
     - cron: "0 21 * * 1-5"
   workflow_dispatch:
 
