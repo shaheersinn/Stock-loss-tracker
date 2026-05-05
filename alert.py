@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 # Each direction can be a single number or a list of numbers.
 TARGETS = {
     "RKLB": {"up": [95.00, 99.00, 105.00], "down": [75.00, 70.00]},
-    "ASTS": {"up": [95.00, 100.00, 110.00], "down": [70.00]},
+    "ASTS": {"up": [95.00, 100.00, 110.00], "down": [58.00, 60.00,70.00]},
     "IREN": {"up": [60.00, 65.00], "down": [44.00]},
     "YSS":  {"up": [45.00, 50.00], "down": [30.00, 27.00]},
     "MU":   {"up": [550.00], "down": [460.00]},
