@@ -8,5 +8,15 @@
     "fired_at": "2026-05-07 15:25 UTC",
     "price_at_fire": 68.555,
     "session": "REGULAR"
+  },
+  "RKLB_up_95.0": {
+    "fired_at": "2026-05-08 14:47 UTC",
+    "price_at_fire": 95.965,
+    "session": "REGULAR"
+  },
+  "IREN_up_60.0": {
+    "fired_at": "2026-05-08 14:47 UTC",
+    "price_at_fire": 61.3348,
+    "session": "REGULAR"
   }
 }
