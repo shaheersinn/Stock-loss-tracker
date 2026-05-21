@@ -23,5 +23,10 @@
     "fired_at": "2026-05-13 17:49 UTC",
     "price_at_fire": 29.415,
     "session": "REGULAR"
+  },
+  "ASTS_up_95.0": {
+    "fired_at": "2026-05-21 20:08 UTC",
+    "price_at_fire": 96.23,
+    "session": "CLOSED (last close)"
   }
 }
