@@ -29,14 +29,14 @@
     "price_at_fire": 106.3379,
     "session": "REGULAR"
   },
-  "RDDT_down_145.0": {
-    "fired_at": "2026-05-22 15:44 UTC",
-    "price_at_fire": 143.34,
-    "session": "REGULAR"
-  },
   "ASTS_up_110.0": {
     "fired_at": "2026-05-26 16:36 UTC",
     "price_at_fire": 125.93,
+    "session": "REGULAR"
+  },
+  "IREN_up_60.0": {
+    "fired_at": "2026-05-27 16:32 UTC",
+    "price_at_fire": 64.48,
     "session": "REGULAR"
   }
 }
