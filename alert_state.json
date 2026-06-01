@@ -29,14 +29,19 @@
     "price_at_fire": 106.3379,
     "session": "REGULAR"
   },
-  "ASTS_up_110.0": {
-    "fired_at": "2026-05-26 16:36 UTC",
-    "price_at_fire": 125.93,
-    "session": "REGULAR"
-  },
   "IREN_up_60.0": {
     "fired_at": "2026-05-27 16:32 UTC",
     "price_at_fire": 64.48,
+    "session": "REGULAR"
+  },
+  "IREN_up_65.0": {
+    "fired_at": "2026-06-01 18:33 UTC",
+    "price_at_fire": 66.1998,
+    "session": "REGULAR"
+  },
+  "YSS_down_30.0": {
+    "fired_at": "2026-06-01 18:33 UTC",
+    "price_at_fire": 29.9104,
     "session": "REGULAR"
   }
 }
