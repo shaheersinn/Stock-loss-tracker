@@ -39,9 +39,9 @@
     "price_at_fire": 66.1998,
     "session": "REGULAR"
   },
-  "YSS_down_30.0": {
-    "fired_at": "2026-06-01 18:33 UTC",
-    "price_at_fire": 29.9104,
+  "ASTS_up_110.0": {
+    "fired_at": "2026-06-02 17:14 UTC",
+    "price_at_fire": 116.212,
     "session": "REGULAR"
   }
 }
