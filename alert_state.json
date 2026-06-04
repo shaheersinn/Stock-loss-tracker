@@ -34,9 +34,9 @@
     "price_at_fire": 64.48,
     "session": "REGULAR"
   },
-  "IREN_up_65.0": {
-    "fired_at": "2026-06-01 18:33 UTC",
-    "price_at_fire": 66.1998,
+  "RDDT_up_180.0": {
+    "fired_at": "2026-06-04 16:16 UTC",
+    "price_at_fire": 182.395,
     "session": "REGULAR"
   }
 }
