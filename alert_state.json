@@ -38,5 +38,10 @@
     "fired_at": "2026-06-04 16:16 UTC",
     "price_at_fire": 182.395,
     "session": "REGULAR"
+  },
+  "YSS_down_30.0": {
+    "fired_at": "2026-06-04 20:52 UTC",
+    "price_at_fire": 29.67,
+    "session": "CLOSED (last close)"
   }
 }
