@@ -19,11 +19,6 @@
     "price_at_fire": 105.545,
     "session": "CLOSED (last close)"
   },
-  "ASTS_up_95.0": {
-    "fired_at": "2026-05-21 20:08 UTC",
-    "price_at_fire": 96.23,
-    "session": "CLOSED (last close)"
-  },
   "YSS_down_30.0": {
     "fired_at": "2026-06-04 20:52 UTC",
     "price_at_fire": 29.67,
