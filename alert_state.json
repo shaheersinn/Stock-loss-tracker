@@ -18,10 +18,5 @@
     "fired_at": "2026-06-12 16:11 UTC",
     "price_at_fire": 27.3548,
     "session": "REGULAR"
-  },
-  "IREN_up_60.0": {
-    "fired_at": "2026-06-12 18:19 UTC",
-    "price_at_fire": 60.8503,
-    "session": "REGULAR"
   }
 }
