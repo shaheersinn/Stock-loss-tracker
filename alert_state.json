@@ -14,9 +14,14 @@
     "price_at_fire": 99.64,
     "session": "REGULAR"
   },
-  "YSS_down_30.0": {
-    "fired_at": "2026-06-12 16:11 UTC",
-    "price_at_fire": 27.3548,
+  "RKLB_up_105.0": {
+    "fired_at": "2026-06-15 17:48 UTC",
+    "price_at_fire": 110.17,
+    "session": "REGULAR"
+  },
+  "IREN_up_60.0": {
+    "fired_at": "2026-06-15 17:48 UTC",
+    "price_at_fire": 61.963,
     "session": "REGULAR"
   }
 }
