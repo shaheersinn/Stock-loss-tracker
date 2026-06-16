@@ -24,9 +24,9 @@
     "price_at_fire": 61.963,
     "session": "REGULAR"
   },
-  "RDDT_up_180.0": {
-    "fired_at": "2026-06-15 20:47 UTC",
-    "price_at_fire": 181.88,
-    "session": "CLOSED (last close)"
+  "YSS_down_30.0": {
+    "fired_at": "2026-06-16 17:55 UTC",
+    "price_at_fire": 29.875,
+    "session": "REGULAR"
   }
 }
