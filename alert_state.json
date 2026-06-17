@@ -13,5 +13,10 @@
     "fired_at": "2026-05-08 16:09 UTC",
     "price_at_fire": 99.64,
     "session": "REGULAR"
+  },
+  "RKLB_up_105.0": {
+    "fired_at": "2026-06-17 16:32 UTC",
+    "price_at_fire": 109.4809,
+    "session": "REGULAR"
   }
 }
