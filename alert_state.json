@@ -14,11 +14,6 @@
     "price_at_fire": 99.64,
     "session": "REGULAR"
   },
-  "IREN_up_60.0": {
-    "fired_at": "2026-06-18 16:21 UTC",
-    "price_at_fire": 60.07,
-    "session": "REGULAR"
-  },
   "YSS_down_30.0": {
     "fired_at": "2026-06-18 16:21 UTC",
     "price_at_fire": 27.78,
