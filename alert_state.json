@@ -24,11 +24,6 @@
     "price_at_fire": 103.665,
     "session": "REGULAR"
   },
-  "RKLB_up_105.0": {
-    "fired_at": "2026-07-01 15:34 UTC",
-    "price_at_fire": 105.5418,
-    "session": "REGULAR"
-  },
   "RDDT_up_180.0": {
     "fired_at": "2026-07-01 15:34 UTC",
     "price_at_fire": 190.91,
