@@ -19,19 +19,19 @@
     "price_at_fire": 96.975,
     "session": "REGULAR"
   },
-  "RKLB_up_99.0": {
-    "fired_at": "2026-06-30 17:21 UTC",
-    "price_at_fire": 103.665,
-    "session": "REGULAR"
-  },
   "RDDT_up_180.0": {
     "fired_at": "2026-07-01 15:34 UTC",
     "price_at_fire": 190.91,
     "session": "REGULAR"
   },
-  "IREN_down_44.0": {
-    "fired_at": "2026-07-01 20:59 UTC",
-    "price_at_fire": 43.32,
-    "session": "CLOSED (last close)"
+  "RDDT_up_195.0": {
+    "fired_at": "2026-07-06 16:16 UTC",
+    "price_at_fire": 205.76,
+    "session": "REGULAR"
+  },
+  "RDDT_up_200.0": {
+    "fired_at": "2026-07-06 16:16 UTC",
+    "price_at_fire": 205.76,
+    "session": "REGULAR"
   }
 }
