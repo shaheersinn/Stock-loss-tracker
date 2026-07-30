@@ -43,5 +43,10 @@
     "fired_at": "2026-07-28 15:12 UTC",
     "price_at_fire": 56.1561,
     "session": "REGULAR"
+  },
+  "RDDT_up_180.0": {
+    "fired_at": "2026-07-30 16:45 UTC",
+    "price_at_fire": 180.2,
+    "session": "REGULAR"
   }
 }
