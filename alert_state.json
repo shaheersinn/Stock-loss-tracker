@@ -33,15 +33,5 @@
     "fired_at": "2026-07-22 18:58 UTC",
     "price_at_fire": 69.97,
     "session": "REGULAR"
-  },
-  "ASTS_down_60.0": {
-    "fired_at": "2026-07-23 15:02 UTC",
-    "price_at_fire": 58.455,
-    "session": "REGULAR"
-  },
-  "RDDT_down_145.0": {
-    "fired_at": "2026-07-31 15:13 UTC",
-    "price_at_fire": 138.34,
-    "session": "REGULAR"
   }
 }
