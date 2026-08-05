@@ -23,5 +23,10 @@
     "fired_at": "2026-07-16 14:52 UTC",
     "price_at_fire": 68.5996,
     "session": "REGULAR"
+  },
+  "ASTS_down_70.0": {
+    "fired_at": "2026-08-05 15:08 UTC",
+    "price_at_fire": 68.3624,
+    "session": "REGULAR"
   }
 }
