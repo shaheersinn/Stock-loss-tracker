@@ -19,11 +19,6 @@
     "price_at_fire": 43.91,
     "session": "CLOSED (last close)"
   },
-  "RKLB_down_75.0": {
-    "fired_at": "2026-07-16 14:52 UTC",
-    "price_at_fire": 68.5996,
-    "session": "REGULAR"
-  },
   "ASTS_down_70.0": {
     "fired_at": "2026-08-05 15:08 UTC",
     "price_at_fire": 68.3624,
