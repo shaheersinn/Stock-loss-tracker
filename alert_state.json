@@ -28,5 +28,10 @@
     "fired_at": "2026-08-21 14:17 UTC",
     "price_at_fire": 42.48,
     "session": "REGULAR"
+  },
+  "RKLB_down_70.0": {
+    "fired_at": "2026-08-24 13:42 UTC",
+    "price_at_fire": 69.64,
+    "session": "REGULAR"
   }
 }
