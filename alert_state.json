@@ -28,15 +28,5 @@
     "fired_at": "2026-08-24 13:42 UTC",
     "price_at_fire": 69.64,
     "session": "REGULAR"
-  },
-  "IREN_down_44.0": {
-    "fired_at": "2026-09-10 19:21 UTC",
-    "price_at_fire": 43.935,
-    "session": "REGULAR"
-  },
-  "ASTS_down_60.0": {
-    "fired_at": "2026-09-10 21:43 UTC",
-    "price_at_fire": 59.91,
-    "session": "CLOSED (last close)"
   }
 }
