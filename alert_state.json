@@ -33,10 +33,5 @@
     "fired_at": "2026-09-11 19:21 UTC",
     "price_at_fire": 43.77,
     "session": "REGULAR"
-  },
-  "ASTS_down_60.0": {
-    "fired_at": "2026-09-11 21:48 UTC",
-    "price_at_fire": 59.86,
-    "session": "CLOSED (last close)"
   }
 }
