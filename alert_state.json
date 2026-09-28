@@ -23,5 +23,15 @@
     "fired_at": "2026-08-20 13:38 UTC",
     "price_at_fire": 74.315,
     "session": "REGULAR"
+  },
+  "IREN_down_44.0": {
+    "fired_at": "2026-09-28 19:54 UTC",
+    "price_at_fire": 41.88,
+    "session": "REGULAR"
+  },
+  "RDDT_down_145.0": {
+    "fired_at": "2026-09-28 19:54 UTC",
+    "price_at_fire": 143.385,
+    "session": "REGULAR"
   }
 }
